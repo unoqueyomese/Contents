@@ -27,7 +27,7 @@ Windows services
 Disable the following services that are not required or have no sense in a VM context:
 
  * Base Filtering Engine (only required if you want to use Microsoft IPSEC)
- * DHCP Client
+ * DHCP Client (IP Helper is dependant on this service, so it cannot be disabled)
  * Function Discovery Provider Host
 
     this will not work anyway because SSDP discovery uses multicast - need to be on the same network which is not the case because of Qubes firewall
